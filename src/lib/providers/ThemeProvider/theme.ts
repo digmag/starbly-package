@@ -1,4 +1,5 @@
-import { DefaultTheme } from "styled-components";
+import { DefaultTheme } from "styled-components/dist/types"
+
 
 export type Pallete = {
     100: string
