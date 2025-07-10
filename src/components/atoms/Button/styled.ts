@@ -4,7 +4,6 @@ export const ButtonStyled = styled.button<{ $variant?: 'primary' | 'secondary' |
     border: none;
     border-radius: 8px;
     padding: 0.25rem 0.5rem;
-    background-color: none;
     outline: none;
     :active{
         opacity: 0.3;
