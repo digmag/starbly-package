@@ -5,6 +5,9 @@ export const ButtonStyled = styled.button<{ $variant?: 'primary' | 'secondary' |
     border-radius: 8px;
     padding: 0.25rem 0.5rem;
     outline: none;
+    &:active{
+        opacity: 0.3;
+    }
     ${({ theme: { Colors, currentTheme }, $variant = 'primary' }) => {
         if (currentTheme === 'light') {
             switch ($variant) {
@@ -48,17 +51,17 @@ export const ButtonStyled = styled.button<{ $variant?: 'primary' | 'secondary' |
         switch ($variant) {
             case "primary":
                 return css`
-                    background-color: ${Colors.blue[800]};
-                    color: ${Colors.gray[500]};
-                    :hover {
-                        background-color: ${Colors.blue[400]};
+                    background-color: ${Colors.blue[300]};
+                    color: ${Colors.gray[700]};
+                    &:hover {
+                        background-color: ${Colors.blue[200]};
                     }
                 `
             case "secondary":
                 return css`
                     background-color: ${Colors.blue[500]};
-                    color: ${Colors.blue[700]};
-                    :hover {
+                    color: ${Colors.gray[400]};
+                    &:hover {
                         background-color: ${Colors.blue[200]};
                     }
                 `
@@ -66,7 +69,7 @@ export const ButtonStyled = styled.button<{ $variant?: 'primary' | 'secondary' |
                 return css`
                     background-color: ${Colors.green[400]};
                     color: ${Colors.green[600]};
-                    :hover {
+                    &:hover {
                         background-color: ${Colors.green[200]};
                     }
                 `
@@ -74,7 +77,7 @@ export const ButtonStyled = styled.button<{ $variant?: 'primary' | 'secondary' |
                 return css`
                     background-color: ${Colors.red[400]};
                     color: ${Colors.red[700]};
-                    :hover {
+                    &:hover {
                         background-color: ${Colors.red[200]};
                     }
                 `
