@@ -1,1 +1,1 @@
-export { ThemeProvider, AppTheme, useThemeProvider, Theme, ThemeContextValues } from './ThemeProvider'
+export { ThemeProvider, AppTheme, useThemeProvider, ThemeContextValues } from './ThemeProvider'

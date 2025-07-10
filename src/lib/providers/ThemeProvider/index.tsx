@@ -1,12 +1,12 @@
 export { ThemeContextValues } from './context'
-export { Pallete, AppTheme, Theme } from './theme'
+export { Pallete, AppTheme } from './theme'
 
 import { PropsWithChildren, useContext, useState } from "react"
-import { AppTheme, theme, Theme } from "./theme"
+import { AppTheme, theme } from "./theme"
 import { ThemeContext } from './context'
-import { ThemeProvider as StyledThemeProvider } from "styled-components"
+import { DefaultTheme, ThemeProvider as StyledThemeProvider } from "styled-components"
 
-export const ThemeProvider = ({ theme: defaultTheme = theme, children }: PropsWithChildren & { theme?: Theme }) => {
+export const ThemeProvider = ({ theme: defaultTheme = theme, children }: PropsWithChildren & { theme?: DefaultTheme }) => {
     const [currentTheme, setTheme] = useState<AppTheme>('light')
     return (
         <ThemeContext.Provider value={{ currentTheme: currentTheme, setTheme: setTheme }}>
