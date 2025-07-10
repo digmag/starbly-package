@@ -11,8 +11,8 @@ export const ButtonStyled = styled.button<{ $variant?: 'primary' | 'secondary' |
                 case "primary":
                     return css`
                         background-color: ${Colors.blue[600]};
-                        color: ${Colors.gray[600]};
-                        :hover {
+                        color: ${Colors.gray[200]};
+                        &:hover {
                             background-color: ${Colors.blue[1000]};
                         }
                     `
@@ -20,7 +20,7 @@ export const ButtonStyled = styled.button<{ $variant?: 'primary' | 'secondary' |
                     return css`
                         background-color: ${Colors.blue[400]};
                         color: ${Colors.blue[800]};
-                        :hover {
+                        &:hover {
                             background-color: ${Colors.blue[600]};
                             color: ${Colors.blue[1000]};
                         }
@@ -29,7 +29,7 @@ export const ButtonStyled = styled.button<{ $variant?: 'primary' | 'secondary' |
                     return css`
                         background-color: ${Colors.green[400]};
                         color: ${Colors.green[800]};
-                        :hover {
+                        &:hover {
                             background-color: ${Colors.green[600]};
                             color: ${Colors.green[1000]};
                         }
@@ -38,7 +38,7 @@ export const ButtonStyled = styled.button<{ $variant?: 'primary' | 'secondary' |
                     return css`
                         background-color: ${Colors.red[400]};
                         color: ${Colors.red[800]};
-                        :hover {
+                        &:hover {
                             background-color: ${Colors.red[600]};
                             color: ${Colors.red[1000]};
                         }
