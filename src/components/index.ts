@@ -1,2 +1,2 @@
 export { ThemeSwitcher } from './features'
-export { Button } from './atoms'
+export { Button, ShortText, Title, Paragraph } from './atoms'
