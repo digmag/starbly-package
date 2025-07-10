@@ -13,7 +13,7 @@ export const ThemeProvider = ({ theme: defaultTheme = theme, children }: PropsWi
         <ThemeContext.Provider value={{ currentTheme: currentTheme, setTheme: setTheme }}>
             <StyledThemeProvider theme={{ ...defaultTheme, currentTheme: currentTheme }}>
                 {children}
-                <GlobalStyles />
+                <GlobalStyles $currentTheme={currentTheme} />
             </StyledThemeProvider>
         </ThemeContext.Provider>
     )
