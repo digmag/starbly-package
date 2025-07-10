@@ -62,7 +62,7 @@ export const ButtonStyled = styled.button<{ $variant?: 'primary' | 'secondary' |
                     background-color: ${Colors.blue[500]};
                     color: ${Colors.gray[400]};
                     &:hover {
-                        background-color: ${Colors.blue[200]};
+                        background-color: ${Colors.blue[400]};
                     }
                 `
             case "success":
