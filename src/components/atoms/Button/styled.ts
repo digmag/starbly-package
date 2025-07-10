@@ -16,12 +16,12 @@ export const ButtonStyled = styled.button<{ $variant?: 'primary' | 'secondary' |
                         background-color: ${Colors.blue[600]};
                         color: ${Colors.gray[200]};
                         &:hover {
-                            background-color: ${Colors.blue[1000]};
+                            background-color: ${Colors.blue[800]};
                         }
                     `
                 case "secondary":
                     return css`
-                        background-color: ${Colors.blue[400]};
+                        background-color: ${Colors.blue[300]};
                         color: ${Colors.blue[800]};
                         &:hover {
                             background-color: ${Colors.blue[600]};
