@@ -30,7 +30,7 @@ export const ButtonStyled = styled.button<{ $variant?: 'primary' | 'secondary' |
                     `
                 case "success":
                     return css`
-                        background-color: ${Colors.green[400]};
+                        background-color: ${Colors.green[200]};
                         color: ${Colors.green[800]};
                         &:hover {
                             background-color: ${Colors.green[600]};
@@ -39,7 +39,7 @@ export const ButtonStyled = styled.button<{ $variant?: 'primary' | 'secondary' |
                     `
                 case "danger":
                     return css`
-                        background-color: ${Colors.red[400]};
+                        background-color: ${Colors.red[200]};
                         color: ${Colors.red[800]};
                         &:hover {
                             background-color: ${Colors.red[600]};
@@ -67,18 +67,18 @@ export const ButtonStyled = styled.button<{ $variant?: 'primary' | 'secondary' |
                 `
             case "success":
                 return css`
-                    background-color: ${Colors.green[400]};
-                    color: ${Colors.green[600]};
+                    background-color: ${Colors.green[600]};
+                    color: ${Colors.green[200]};
                     &:hover {
-                        background-color: ${Colors.green[200]};
+                        background-color: ${Colors.green[400]};
                     }
                 `
             case "danger":
                 return css`
-                    background-color: ${Colors.red[400]};
-                    color: ${Colors.red[700]};
+                    background-color: ${Colors.red[600]};
+                    color: ${Colors.red[200]};
                     &:hover {
-                        background-color: ${Colors.red[200]};
+                        background-color: ${Colors.red[400]};
                     }
                 `
         }
