@@ -5,6 +5,7 @@ import { PropsWithChildren, useContext, useState } from "react"
 import { AppTheme, theme } from "./theme"
 import { ThemeContext } from './context'
 import { DefaultTheme, ThemeProvider as StyledThemeProvider } from "styled-components"
+import { GlobalStyles } from './globalStyles'
 
 export const ThemeProvider = ({ theme: defaultTheme = theme, children }: PropsWithChildren & { theme?: DefaultTheme }) => {
     const [currentTheme, setTheme] = useState<AppTheme>('light')
@@ -12,6 +13,7 @@ export const ThemeProvider = ({ theme: defaultTheme = theme, children }: PropsWi
         <ThemeContext.Provider value={{ currentTheme: currentTheme, setTheme: setTheme }}>
             <StyledThemeProvider theme={{ ...defaultTheme, currentTheme: currentTheme }}>
                 {children}
+                <GlobalStyles />
             </StyledThemeProvider>
         </ThemeContext.Provider>
     )
