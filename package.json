@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/digmag/starbly-package#readme",
   "devDependencies": {
+    "@emotion/is-prop-valid": "^1.3.1",
     "@rollup/plugin-commonjs": "^28.0.5",
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^16.0.1",

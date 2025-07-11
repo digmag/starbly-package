@@ -11,8 +11,8 @@ export const List = function <T>({ type = 'unordered', data, renderTemplate, ...
     const Component = type === 'unordered' ? Ul : Ol;
     return (
         <Component {...props}>
-            {data.map(temp =>
-                <li>
+            {data.map((temp, idx) =>
+                <li key={idx}>
                     {renderTemplate(temp)}
                 </li>)}
         </Component>
