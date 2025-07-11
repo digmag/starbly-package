@@ -2,12 +2,12 @@ import { CSSProperties } from "react";
 import styled, { css } from "styled-components";
 
 export type FlexContainerStyledProps = {
-    flexDirection: CSSProperties['flexDirection']
-    align: CSSProperties['alignItems']
-    justify: CSSProperties['justifyContent']
-    gap: CSSProperties['gap']
-    width: CSSProperties['width']
-    height: CSSProperties['height']
+    flexDirection?: CSSProperties['flexDirection']
+    align?: CSSProperties['alignItems']
+    justify?: CSSProperties['justifyContent']
+    gap?: CSSProperties['gap']
+    width?: CSSProperties['width']
+    height?: CSSProperties['height']
 }
 
 export const FlexContainerStyled = styled.div<FlexContainerStyledProps>`
