@@ -4,6 +4,8 @@ export {
     ThemeSwitcher,
     ShortText,
     Title,
-    Paragraph
+    Paragraph,
+    FlexContainer,
+    List
 } from './components'
 
