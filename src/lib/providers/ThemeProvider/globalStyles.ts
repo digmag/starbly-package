@@ -1,11 +1,10 @@
 import { createGlobalStyle, css } from "styled-components";
-import { AppTheme } from "./theme";
 
-export const GlobalStyles = createGlobalStyle<{ $currentTheme?: AppTheme }>`
+export const GlobalStyles = createGlobalStyle`
     body{
-        ${({ $currentTheme = 'light', theme: { Colors } }) => {
+        ${({ theme: { Colors, currentTheme } }) => {
         return css`
-                background-color: ${$currentTheme === 'light' ? Colors.gray[200] : Colors.gray[800]};
+                background-color: ${currentTheme === 'light' ? Colors.gray[200] : Colors.gray[800]};
             `
     }}
     }
